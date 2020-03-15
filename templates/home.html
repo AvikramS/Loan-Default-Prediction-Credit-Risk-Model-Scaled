@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Credit Risk Prediction</title>
+  </head>
+
+  <body>
+    <h1><div style="text-align:center"><font color="blue">Credit Risk Prediction</font></div></h1>
+    <hr>
+    </br>
+    <h2><div style="text-align:center">Enter loan client details </div></h2>
+    </br>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-6'>
+          <form method="POST" action="/predict">
+            <div class="form-group">
+              <label for="TargetAge"><p class="font-weight-bold">TargetAge</p></label>
+              <input type="text" name="TargetAge">
+              <small id="AgeHelp" class="form-text text-muted">Client age</small>
+              </div>
+
+              <div class="form-group">
+                <label for="HousingIndex"><p class="font-weight-bold">HousingIndex</p></label>
+                <input type="text" name="HousingIndex">
+                <small id="CHIHelp" class="form-text text-muted">Hosing Index Score</small>
+                </div>
+
+                <div class="form-group">
+                  <label for="ppiscore"><p class="font-weight-bold">ppiscore</p></label>
+                  <input type="text" name="ppiscore">
+                  <small id="PPIHelp" class="form-text text-muted">PPI Score</small>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="peopleAgesBelow17"><p class="font-weight-bold">peopleAgesBelow17</p></label>
+                    <input type="text" name="peopleAgesBelow17">
+                    <small id="KidHelp" class="form-text text-muted">Number of kids below 17 years</small>
+                    </div>
+
+                        <div class="form-group">
+                          <label for="LoanCycle"><p class="font-weight-bold">LoanCycle</p></label>
+                          <input type="text" name="LoanCycle">
+                          <small id="CycleHelp" class="form-text text-muted">Client Loan Cycle</small>
+                          </div>
+
+                          <div class="form-group">
+                            <label for="CBR_CUR_BAL_HM"><p class="font-weight-bold">CBR_CUR_BAL_HM</p></label>
+                            <input type="text" name="CBR_CUR_BAL_HM">
+                            <small id="CBRHelp" class="form-text text-muted">CBR Balance</small>
+                            </div>
+
+                            <div class="form-group"><label for="LoanAmountApproved"><p class="font-weight-bold">LoanAmountApproved</p></label>
+                              <input type="text" name="LoanAmountApproved">
+                              <small id="LoanHelp" class="form-text text-muted">LoanAmountApproved</small>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="TotalMonthlyExp"><p class="font-weight-bold">TotalMonthlyExp</p></label>
+                                <input type="text" name="TotalMonthlyExp">
+                                <small id="TMEHelp" class="form-text text-muted">TotalMonthlyExp</small>
+                                </div>
+
+
+                        <input class='btn btn-primary' type='submit' value='Submit'>
+            </form>
+
+          </div>
+          </div>
+          </div>
+  </body>
+
+</html>
